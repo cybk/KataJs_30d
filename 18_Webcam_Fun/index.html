@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get User Media Code Along!</title>
+  <link rel="stylesheet" href="snaps.css">
+</head>
+<body>
+
+  <div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+       <DIV CLASS="RGB">
+        <LABEL FOR="RMIN">RED MIN:</LABEL>
+        <INPUT TYPE="RANGE" MIN=0 MAX=255 NAME="RMIN">
+        <LABEL FOR="RMAX">RED MAX:</LABEL>
+        <INPUT TYPE="RANGE" MIN=0 MAX=255 NAME="RMAX">
+        <BR>
+        <LABEL FOR="GMIN">GREEN MIN:</LABEL>
+        <INPUT TYPE="RANGE" MIN=0 MAX=255 NAME="GMIN">
+        <LABEL FOR="GMAX">GREEN MAX:</LABEL>
+        <INPUT TYPE="RANGE" MIN=0 MAX=255 NAME="GMAX">
+        <BR>
+        <LABEL FOR="BMIN">BLUE MIN:</LABEL>
+        <INPUT TYPE="RANGE" MIN=0 MAX=255 NAME="BMIN">
+        <LABEL FOR="BMAX">BLUE MAX:</LABEL>
+        <INPUT TYPE="RANGE" MIN=0 MAX=255 NAME="BMAX">
+      </DIV>
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+
+  <audio class="snap" src="./snap.mp3" hidden></audio>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
